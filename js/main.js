@@ -1,0 +1,1 @@
+import {} from "./ejemplo.js";
