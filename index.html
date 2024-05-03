@@ -1,117 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpaceX-API</title>
-    <link rel="stylesheet" href="./css/style.css" />
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body style="background: #000;">
-    <main>
-      <header class="main_header">VEHICLE OVERVIEW</header>
-      <ul class="main_list">
-        <li>
-          <img src="">
-          <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
-          <p>ALL SYSTEMS CHECK</p>
-          <small> Normal </small>
-        </li>
-        
-      </ul>
-      <article class="main_article_1">
-        <p class="main_article_p"></p>
-        <p class="main_article_p"></p>
-        <p class="main_article_p"></p>
-        <p class="main_article_p"></p>
-      </article>
-      <article class="main_article_2">
-        <p class="main_article_p2"></p>
-        <p class="main_article_p2"></p>
-      </article>
-      <article class="main_article_3">
-        <p class="main_article_p2"></p>
-        <p class="main_article_p2"></p>
-      </article>
-      <article class="main_article_4">
-        <p style="color: red">CONNECTIONS</p>
-        <ul></ul>
-      </article>
-      <div class="main_img">
-        <img src="./store/img/SpaceX 3D Model Render.png">
-      </div>
-      <ul class="main_list2">
-        <li>
-          <article class="list2_article">
-            <p>Inertial Velocity</p>
-            <progress id="file" max="100" value="70">70%</progress>
-          </article>
-          <p class="list2_p">7.68 km/s</p>
-        </li>
-        <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div id="header__title" class="header__title"></div>
+    </header>
+    <main class="main">
+        <nav class="nav__description">
+            <div id="description__item" class="description__item"></div>
+            <div class="description__buttom">
+                <a href="#">a</a>
+                <a href="#">b</a>
+            </div>
+        </nav>
+        <section class="main__section">
+            <article class="section__information__1">
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
             </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
+            <article class="section__information__container">
+                <div class="section__information__2">
+                    <div>
+                        <div class="carousel__item"></div>
+                        <div class="carousel__item"></div>
+                    </div>
+                    <div>Caja 2</div>
+                </div>
+                <div id="section__image" class="section__image"></div>
+                <div class="section__information__3">
+                    <div>
+                        <div class="carousel__item"></div>
+                        <div class="carousel__item"></div>
+                    </div>
+                    <div>Caja 2</div>
+                </div>
             </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
-            </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
-            </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
-            </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
-            </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-          <li>
-            <article class="list2_article">
-              <p>Inertial Velocity</p>
-              <progress id="file" max="100" value="70">70%</progress>
-            </article>
-            <p class="list2_p">7.68 km/s</p>
-          </li>
-      </ul>
-      <div class="main_button">
-        <button>SYSTEMS</button>
-        <button>CABIN</button>
-      </div>
-      <footer class="main_footer">
-        <button>caja_1</button><button>caja_2</button><button>caja_3</button
-        ><button>caja_4</button><button>caja_5</button><button>caja_6</button
-        ><button>caja_7</button><button>caja_8</button><button>caja_9</button>
-      </footer>
-      <div class="main_more">
-        <short> Power, Engine, Comms </short>
-        <button>MORE</button>
-      </div>
+            <footer class="footer">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://www.example.com">
+                            <span>a</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+        <nav class="nav__information">
+            <div id="information__2" class="information__item"></div>
+            <div id="paginacion" class="information__buttom"></div>
+        </nav>
     </main>
-    <script src="./js/main.js"></script>
-  </body>
+
+    
+    <!-- Check icons -->
+    <!-- <i class='bx bxs-check-circle' style='color:#9499c3'  ></i>
+    <i class='bx bxs-check-circle' style='color:#40c110'  ></i>
+    <i class='bx bxs-check-circle' style='color:#ea7b15'  ></i> -->
+
+    <!-- Nav icons -->
+    <!-- <img src="storage/img/icons/rocket.svg">
+    <i class='bx bx-body' style='color:#e72d2d'></i>
+    <img src="storage/img/icons/comms.svg">
+    <img src="storage/img/icons/prop.svg">
+    <img src="storage/img/icons/mech.svg">
+    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
+    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
+    <i class='bx bxs-brightness-half' style="color: #fff"></i>  -->
+</body>
 </html>
