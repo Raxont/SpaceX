@@ -34,7 +34,6 @@ export const informRocketEngineThrustSeaLevel = async(thrust_sea_level)=>{
     divFirst.append(divFirstChildren)
     div.append(divFirst)
     let section__information__1 = document.querySelector("#section__information__1");
-    section__information__1.innerHTML = "";
     section__information__1.append(div)
 
     // <div class="carousel__item">
@@ -73,7 +72,6 @@ export const informRocketEngineThrustVacuum = async(thrust_vacuum)=>{
     divFirst.append(divFirstChildren)
     div.append(divFirst)
     let section__information__1 = document.querySelector("#section__information__1");
-    // section__information__1.innerHTML = "";
     section__information__1.append(div)
 
     // <div class="carousel__item">
@@ -149,9 +147,8 @@ export const informRocketFirstStageThrustSeaLevel = async(thrust_sea_level)=>{
     divFirstChildren.append(strong, smallFirst, smallLast)
     divFirst.append(divFirstChildren)
     div.append(divFirst)
-    let section__information__2 = document.querySelector("#section__information__2");
-    // section__information__1.innerHTML = "";
-    section__information__2.append(div)
+    let container__1 = document.querySelector("#container__1");
+    container__1.append(div)
 
     // <div class="carousel__item">
     //     <div class="item__progress__bar">
@@ -187,9 +184,8 @@ export const informRocketSecondStageThrust= async(thrust_sea_level)=>{
     divFirstChildren.append(strong, smallFirst, smallLast)
     divFirst.append(divFirstChildren)
     div.append(divFirst)
-    let section__information__2 = document.querySelector("#section__information__2");
-    // section__information__1.innerHTML = "";
-    section__information__2.append(div)
+    let container__1 = document.querySelector("#container__1");
+    container__1.append(div)
 
     // <div class="carousel__item">
     //     <div class="item__progress__bar">
@@ -224,9 +220,9 @@ export const informRocketFuelAmountTons= async(fuel_amount_tons)=>{
     divFirstChildren.append(strong, smallFirst, smallLast)
     divFirst.append(divFirstChildren)
     div.append(divFirst)
-    let section__information__3 = document.querySelector("#section__information__3");
+    let container__2 = document.querySelector("#container__2");
     // section__information__1.innerHTML = "";
-    section__information__3.append(div)
+    container__2.append(div)
 
     // <div class="carousel__item">
     //     <div class="item__progress__bar">
@@ -261,9 +257,8 @@ export const informRocketSecondStageFuelAmountTons= async(fuel_amount_tons)=>{
     divFirstChildren.append(strong, smallFirst, smallLast)
     divFirst.append(divFirstChildren)
     div.append(divFirst)
-    let section__information__3 = document.querySelector("#section__information__3");
-    // section__information__1.innerHTML = "";
-    section__information__3.append(div)
+    let container__2 = document.querySelector("#container__2");
+    container__2.append(div)
 
     // <div class="carousel__item">
     //     <div class="item__progress__bar">
