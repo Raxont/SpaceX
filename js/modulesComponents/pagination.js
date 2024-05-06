@@ -13,7 +13,12 @@ import {
 } from "./information.js";
 import { 
     informRocketEngineThrustSeaLevel, 
-    informRocketEngineThrustVacuum
+    informRocketEngineThrustVacuum,
+    informRocketFirstStageThustVacuum,
+    informRocketFirstStageThrustSeaLevel,
+    informRocketSecondStageThrust,
+    informRocketFuelAmountTons,
+    informRocketSecondStageFuelAmountTons
 } from "./inform.js";
 import { 
     imageRockets 
@@ -42,9 +47,12 @@ const getRocketsId = async(e)=>{
     description__item.innerHTML = "";
     let section__image = document.querySelector("#section__image")
     section__image.innerHTML = "";
+    let section__information__2 = document.querySelector("#section__information__2")
+    section__information__2.innerHTML = "";
+    let section__information__3 = document.querySelector("#section__information__3")
+    section__information__3.innerHTML = "";
 
     let Rocket = await getAllRocketsId(e.target.id);
-    console.log(Rocket);
 
     await informationRockets(Rocket.country, Rocket.description)
     await nameRockets(Rocket.name)
@@ -54,6 +62,11 @@ const getRocketsId = async(e)=>{
 
     await informRocketEngineThrustSeaLevel(Rocket.engines.thrust_sea_level);
     await informRocketEngineThrustVacuum(Rocket.engines.thrust_vacuum);
+    await informRocketFirstStageThustVacuum(Rocket.first_stage.thrust_vacuum);
+    await informRocketFirstStageThrustSeaLevel(Rocket.first_stage.thrust_sea_level)
+    await informRocketSecondStageThrust(Rocket.second_stage.thrust)
+    await informRocketFuelAmountTons(Rocket.first_stage.fuel_amount_tons)
+    await informRocketSecondStageFuelAmountTons(Rocket.second_stage.fuel_amount_tons)
     await imageRockets(Rocket.flickr_images);
 
     await progressRocketWeight(Rocket)
